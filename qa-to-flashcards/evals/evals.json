@@ -1,0 +1,23 @@
+{
+  "skill_name": "qa-to-flashcards",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Convert these to flashcards:\nQ: What is photosynthesis?\nA: The process by which plants convert light to energy\nQ: What is cellular respiration?\nA: The process by which cells release energy from glucose\nUse tags: biology",
+      "expected_output": "JSON file with 2 cards, each having 'biology' tag",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Create flashcards from this CSV:\nquestion,answer,tags\nWhat is 2+2?,4,math\nWhat is the capital of France?,Paris,geography\nWhat is H2O?,water,science",
+      "expected_output": "JSON file with 3 cards with appropriate tags from CSV",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I have these Q&A pairs about JavaScript:\nWhat is a variable? A container for storing data\nWhat is a function? A reusable block of code\nMake these into flashcards",
+      "expected_output": "JSON file - should ask user for tags since none provided",
+      "files": []
+    }
+  ]
+}
