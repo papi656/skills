@@ -1,0 +1,23 @@
+{
+  "skill_name": "markdown-to-roadmap",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "create a roadmap from my-notes.md which contains the learning plan I wrote",
+      "expected_output": "A roadmap.json file with properly parsed title, description, and weekly items",
+      "files": ["my-notes.md"]
+    },
+    {
+      "id": 2,
+      "prompt": "convert data.json to roadmap format",
+      "expected_output": "A roadmap.json file with correctly mapped fields from the input JSON",
+      "files": ["data.json"]
+    },
+    {
+      "id": 3,
+      "prompt": "create a roadmap from roadmap-input.csv that has columns for week number, title, description, and resources",
+      "expected_output": "A roadmap.json file with parsed CSV rows as roadmap items",
+      "files": ["roadmap-input.csv"]
+    }
+  ]
+}

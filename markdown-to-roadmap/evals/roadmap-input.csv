@@ -1,0 +1,3 @@
+weekNumber,title,description,status,resource_type,resource_subject,resource_title,resource_author
+1,Python Basics,Learn variables and data types,backlog,book,programming,Python Crash Course,Eric Matthes
+2,Control Flow,If statements and loops,in_progress,video,programming,Python for Everybody,Charles Severance
