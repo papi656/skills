@@ -39,7 +39,8 @@ The output roadmap JSON must follow this schema:
           "subject": "string (required)",
           "title": "string (required)",
           "author": "string (required)",
-          "coverUrl": "string (optional)"
+          "coverUrl": "string (optional)",
+          "url": "string (required)"
         }
       ],
       "resourceListStatus": ["boolean array, defaults to all false"],
@@ -79,7 +80,7 @@ If format is unclear, assume markdown/text.
 - Map common field names (e.g., `week` → `weekNumber`, `resources` → `resourceList`)
 
 **CSV parsing:**
-- Headers: weekNumber, title, description, status, resource_type, resource_subject, resource_title, resource_author
+- Headers: weekNumber, title, description, status, resource_type, resource_subject, resource_title, resource_author, resource_url
 - Resources are embedded as JSON arrays in resource fields
 
 **Text parsing:**
@@ -92,7 +93,7 @@ Check required fields:
 - `title` must be non-empty string
 - `description` must be non-empty string
 - Each item must have `weekNumber`, `title`, `description`
-- Each resource must have `type`, `subject`, `title`, `author`
+- Each resource must have `type`, `subject`, `title`, `author`, `url`
 
 ### 4. Output
 
